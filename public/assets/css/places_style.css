@@ -1,0 +1,12 @@
+.main-title {
+   font-family: 'Amatic SC', cursive; 
+   font-size: 70px
+}
+.wannaGoCard {
+    font-family: 'Amatic SC', cursive; 
+    font-size: 30px;
+}
+.addDestination * {
+    font-family: 'Amatic SC', cursive; 
+    font-size: 25px !important;
+}

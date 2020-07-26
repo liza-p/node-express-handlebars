@@ -1,0 +1,14 @@
+ <div class="card wannaGoCard">
+     
+      <div class="card-body">
+        <h5 class="card-title">Wanna Go!</h5>
+       <ul>
+    {{#each places}}
+        <li>{{title}}
+            <button class='btn btn-outline-warning visit' data-id='{{id}}'>visit</button>
+        </li>
+    {{/each}}
+</ul>
+ <img src="./assets/img/travel3.jpg" class="card-img-top" alt="travel">
+      </div>
+    </div>
