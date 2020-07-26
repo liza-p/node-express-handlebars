@@ -1,6 +1,15 @@
-file, import the following:
 
-* Express
-* `burger.js`
+ var places = require("../models/places.js");
+ var express = require("express");
+ var router = express.Router();
 
-4. Create the `router` for the app, and export the `router` at the end of your file.
+
+ // super simple route for testing setup
+ // This route matches with localhost:8080/
+router.get("/", (req, res) => {
+    places.getAll(data => {
+      res.render("index", {places: data});
+    });
+});
+  
+module.exports = router;
