@@ -9,4 +9,13 @@
 .addDestination * {
     font-family: 'Amatic SC', cursive; 
     font-size: 25px !important;
+
 }
+body {
+    
+    background: #f1fbff !important; 
+    background: -moz-linear-gradient(-45deg, #f1fbff 0%, #d3eaf1 100%)!important;
+    background: -webkit-linear-gradient(-45deg, #f1fbff 0%,#d3eaf1 100%)!important;
+    background: linear-gradient(135deg, #f1fbff 0%,#d3eaf1 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1fbff', endColorstr='#d3eaf1',GradientType=1 )!important;
+    }
