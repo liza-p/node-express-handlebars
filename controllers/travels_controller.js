@@ -8,7 +8,13 @@
  // This route matches with localhost:8080/
 router.get("/", (req, res) => {
     places.getAll(data => {
-      res.render("index", {places: data});
+      // Filter unvisited places from all places
+      var wannaGoPlaces = data.filter(row => row.visited === 0);
+      var visitedPlaces = data.filter(row => row.visited === 1);
+      res.render("index", {
+        wannaGoPlaces: wannaGoPlaces,
+        visitedPlaces: visitedPlaces
+      });
     });
 });
 
@@ -25,7 +31,7 @@ router.put("/api/places/:id",(req,res) =>{
 
   places.update({
     visited: req.body.visited
-  }, consition,function(result) {
+  }, condition,function(result) {
     if(result.changedRows == 0){
       return res.status(404).end();
     }else{
