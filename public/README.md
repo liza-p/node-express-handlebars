@@ -180,7 +180,7 @@ All the recommended files and directories from the steps above should look like 
 ├── package.json
 │
 ├── public
-│   └── assets
+│   └── assets 
 │       ├── css
 │       │   └── burger_style.css
 │       └── img
