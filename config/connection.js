@@ -1,12 +1,20 @@
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({
-  host: "localhost",
+  host: "mkorvuw3sl6cu9ms.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
-  user: "root",
-  password: "password",
-  database: "travel_bucket_list_db"
+  user: "ecau5iqgmez11wwu",
+  password: "mkd631m1ypj4gpbx",
+  database: "lfj036r18a7yv0sn"
 });
+// const connection = mysql.createConnection({
+//     host: "localhost",
+//     port: 3306,
+//     user: "root",
+//     password: "password",
+//     database: "travel_bucket_list_db"
+//   });
+  
 
 connection.connect(err => {
   if (err) {
