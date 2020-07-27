@@ -19,5 +19,19 @@ router.post("/api/places",(req,res)=>{
     res.json({ id: result.insertId });
   })
 });
+router.put("/api/places/:id",(req,res) =>{
+  var condition = "id = " + req.params.id;
+  console.log("condition", condition);
+
+  places.update({
+    visited: req.body.visited
+  }, consition,function(result) {
+    if(result.changedRows == 0){
+      return res.status(404).end();
+    }else{
+      res.status(200).end();
+    }
+  });
+});
   
 module.exports = router;
