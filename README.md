@@ -7,7 +7,7 @@ This application is buit with MySQL to query and route data, Node, Express, Hand
 
 
 ## Heroku link to the deployed application
-[Travel Bucket list](https://travel-bucketlist.herokuapp.com/?)
+[Travel Bucket list](https://travel-bucketlist.herokuapp.com)
 
 ## Demo
 ![](public/assets/img/bucketList.gif)
