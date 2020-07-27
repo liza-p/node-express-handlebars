@@ -54,7 +54,7 @@ const orm = {
       cb(result);
     });
   },
-  update: function(table, objColVals, cb){
+  update: function(table, objColVals, condition, cb){
     var queryString = `UPDATE ${table} 
     SET ${objToSql(objColVals)}
     WHERE ${condition}`
