@@ -15,10 +15,8 @@ const places = {
         orm.add("places", ["title"], [placeName], cb)
     },
     // visited -- set the place as a true when visited
-    update: function(id,cb){
-        orm.update("places", {
-            visited: true
-        }, `id = ${id}`, cb)
+    update: function(objColVals,condition,cb){
+        orm.update("places", objColVals, condition, cb)
     }
 }
 
