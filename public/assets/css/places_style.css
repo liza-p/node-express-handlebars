@@ -2,7 +2,7 @@
    font-family: 'Amatic SC', cursive; 
    font-size: 70px
 }
-.wannaGoCard {
+.wannaGoCard, .visitedCard {
     font-family: 'Amatic SC', cursive; 
     font-size: 30px;
 }
