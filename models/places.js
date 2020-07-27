@@ -3,16 +3,19 @@
 var orm = require("../config/orm.js");
 
 const places = {
-
+ //get data for all places 
     getAll: function(cb) {
         orm.getAll("places", function(res) {
             cb(res);
           });
-    }
-    //get data for all places 
+    },
+   
     // add a place
+    add: function(placeName, cb){
+        orm.add("places", ["title"], [placeName], cb)
+    }
     // visited -- set the place as a true when visited
-
+    
 }
 
 module.exports = places;
